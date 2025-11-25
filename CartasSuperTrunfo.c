@@ -19,6 +19,11 @@ float area2;
 float pib2;
 int quantpontoturistico2;
 
+//Calculos
+float densidade1, densidade2;
+float percapta1, percapta2;
+
+
 
 
 printf("*************************CADASTRO CIDADES************************** \n");
@@ -70,6 +75,11 @@ scanf("%f", &pib2);
 printf("DIGITE A QUANTIDADE DE PONTOS TURISTICOS: \n");
 scanf("%d", &quantpontoturistico2);
 
+densidade1=(populacao / area);
+densidade2=(populacao2 / area2);
+percapta1=(pib / populacao);
+percapta2=(pib2 / populacao2);
+
 //exibe os cards cadastrados
 printf("*******CARDS DE CIDADES CADASTRADAS*****\n");
 
@@ -78,19 +88,25 @@ printf("ESTADO: %s\n", estado);
 printf("CARTAO: %s\n", codigocarta);
 printf("NOME CIDADE: %s\n", nomecidade);
 printf("POPULACAO: %d\n", populacao);
-printf("AREA: %f\n", area);
-printf("PIB: %f\n", pib);
+printf("AREA: %.2f\n", area);
+printf("PIB: %.2f\n", pib);
 printf("NUMERO PONTOS TURISTICOS: %d\n", quantpontoturistico);
-
+printf("DENSIDADE POPULACIONAL: %.2f \n", densidade1);
+printf("PIB PER CAPITA: %.2f\n", percapta1);
 
 printf("CARD 02 \n");
 printf("ESTADO: %s\n", estado2);
 printf("CARTAO: %s\n", codigocarta2);
 printf("NOME CIDADE: %s\n", nomecidade2);
 printf("POPULACAO: %d\n", populacao2);
-printf("AREA: %f\n", area2);
-printf("PIB: %f\n", pib2);
+printf("AREA: %.2f\n", area2);
+printf("PIB: %.2f\n", pib2);
 printf("NUMERO PONTOS TURISTICOS: %d\n", quantpontoturistico2);
+printf("DENSIDADE POPULACIONAL: %.2f \n", densidade2);
+printf("PIB PER CAPITA: %.2f\n", percapta2);
+
+
 
 return 0;
 } 
+
