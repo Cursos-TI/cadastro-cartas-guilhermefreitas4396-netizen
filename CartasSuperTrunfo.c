@@ -109,14 +109,14 @@ printf("PIB PER CAPITA: %.2f\n", percapta2);
 
 
 // exibe a comparação das cartas
-printf("****COMPARAÇAO CARTA****");
-printf("A população do Card 01(%u) é maior que a população do Card 02(%u):? %d", populacao, populacao2, (populacao>populacao2));
-printf("A area do Card 01(%.2f) é maior que a area do Card 02(%.2f):? %d", area, area2, (area>area2));
-printf("O PIB do Card 01(%.2f) é maior que o PIB do Card 02(%.2f):? %d", pib, pib2, (pib>pib2));
-printf("A Quat pontos turisticos Card 01(%d) é maior que a Quant pontos turisiticos do Card 02(%d):? %d", quantpontoturistico, quantpontoturistico2, (quantpontoturistico>quantpontoturistico2));
-printf("A Densidade populacional Card 01(%.2f) é maior que a Densidade populacional do Card 02(%.2f):? %d", densidade1, densidade2, (densidade1>densidade2));
-printf("O PIB per capita do Card 01(%.2f) é menor que o PIB per capita do Card 02(%.2f):? %d", percapta1, percapta2, (percapta1<percapta2));
-printf("O Super Poder do Card 01(%f) é maior que o Super poder do Card 02(%f):? %d", superpoder1, superpoder2, (superpoder1>superpoder2));
+printf("****COMPARAÇAO CARTA****\n");
+printf("A população do Card 01(%u) é maior que a população do Card 02(%u):? %d \n", populacao, populacao2, (populacao>populacao2));
+printf("A area do Card 01(%.2f) é maior que a area do Card 02(%.2f):? %d \n", area, area2, (area>area2));
+printf("O PIB do Card 01(%.2f) é maior que o PIB do Card 02(%.2f):? %d \n", pib, pib2, (pib>pib2));
+printf("A Quat pontos turisticos Card 01(%d) é maior que a Quant pontos turisiticos do Card 02(%d):? %d \n", quantpontoturistico, quantpontoturistico2, (quantpontoturistico>quantpontoturistico2));
+printf("A Densidade populacional Card 01(%.2f) é maior que a Densidade populacional do Card 02(%.2f):? %d \n", densidade1, densidade2, (densidade1>densidade2));
+printf("O PIB per capita do Card 01(%.2f) é menor que o PIB per capita do Card 02(%.2f):? %d \n", percapta1, percapta2, (percapta1<percapta2));
+printf("O Super Poder do Card 01(%.2f) é maior que o Super poder do Card 02(%.2f):? %d \n", superpoder1, superpoder2, (superpoder1>superpoder2));
 
 
 return 0;
