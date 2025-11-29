@@ -80,8 +80,8 @@ densidade1=(populacao / area);
 densidade2=(populacao2 / area2);
 percapta1=(pib / populacao);
 percapta2=(pib2 / populacao2);
-superpoder1=(float)(populacao+area+pib+quantpontoturistico+densidade1+percapta1);
-superpoder2=(float)(populacao2+area2+pib2+quantpontoturistico2+densidade2+percapta2);
+superpoder1=(float)(populacao+area+pib+quantpontoturistico+(1/densidade1)+percapta1);
+superpoder2=(float)(populacao2+area2+pib2+quantpontoturistico2+(1/densidade2)+percapta2);
 //exibe os cards cadastrados
 printf("*******CARDS DE CIDADES CADASTRADAS*****\n");
 
