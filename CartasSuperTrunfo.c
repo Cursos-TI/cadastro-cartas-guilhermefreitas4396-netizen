@@ -5,7 +5,7 @@ int main(){
 char estado[3];
 char codigocarta[10];
 char nomecidade[50];
-int populacao;
+unsigned int populacao;
 float area;
 float pib;
 int quantpontoturistico;
@@ -14,7 +14,7 @@ int quantpontoturistico;
 char estado2[3];
 char codigocarta2[10];
 char nomecidade2[50];
-int populacao2;
+unsigned int populacao2;
 float area2;
 float pib2;
 int quantpontoturistico2;
@@ -22,6 +22,7 @@ int quantpontoturistico2;
 //Calculos
 float densidade1, densidade2;
 float percapta1, percapta2;
+float superpoder1, superpoder2;
 
 
 
@@ -79,7 +80,8 @@ densidade1=(populacao / area);
 densidade2=(populacao2 / area2);
 percapta1=(pib / populacao);
 percapta2=(pib2 / populacao2);
-
+superpoder1=(float)(populacao+area+pib+quantpontoturistico+densidade1+percapta1);
+superpoder2=(float)(populacao2+area2+pib2+quantpontoturistico2+densidade2+percapta2);
 //exibe os cards cadastrados
 printf("*******CARDS DE CIDADES CADASTRADAS*****\n");
 
@@ -87,7 +89,7 @@ printf("CARD 01 \n");
 printf("ESTADO: %s\n", estado);
 printf("CARTAO: %s\n", codigocarta);
 printf("NOME CIDADE: %s\n", nomecidade);
-printf("POPULACAO: %d\n", populacao);
+printf("POPULACAO: %u\n", populacao);
 printf("AREA: %.2f\n", area);
 printf("PIB: %.2f\n", pib);
 printf("NUMERO PONTOS TURISTICOS: %d\n", quantpontoturistico);
@@ -98,13 +100,23 @@ printf("CARD 02 \n");
 printf("ESTADO: %s\n", estado2);
 printf("CARTAO: %s\n", codigocarta2);
 printf("NOME CIDADE: %s\n", nomecidade2);
-printf("POPULACAO: %d\n", populacao2);
+printf("POPULACAO: %u\n", populacao2);
 printf("AREA: %.2f\n", area2);
 printf("PIB: %.2f\n", pib2);
 printf("NUMERO PONTOS TURISTICOS: %d\n", quantpontoturistico2);
 printf("DENSIDADE POPULACIONAL: %.2f \n", densidade2);
 printf("PIB PER CAPITA: %.2f\n", percapta2);
 
+
+// exibe a comparação das cartas
+printf("****COMPARAÇAO CARTA****");
+printf("A população do Card 01(%u) é maior que a população do Card 02(%u):? %d", populacao, populacao2, (populacao>populacao2));
+printf("A area do Card 01(%.2f) é maior que a area do Card 02(%.2f):? %d", area, area2, (area>area2));
+printf("O PIB do Card 01(%.2f) é maior que o PIB do Card 02(%.2f):? %d", pib, pib2, (pib>pib2));
+printf("A Quat pontos turisticos Card 01(%d) é maior que a Quant pontos turisiticos do Card 02(%d):? %d", quantpontoturistico, quantpontoturistico2, (quantpontoturistico>quantpontoturistico2));
+printf("A Densidade populacional Card 01(%.2f) é maior que a Densidade populacional do Card 02(%.2f):? %d", densidade1, densidade2, (densidade1>densidade2));
+printf("O PIB per capita do Card 01(%.2f) é menor que o PIB per capita do Card 02(%.2f):? %d", percapta1, percapta2, (percapta1<percapta2));
+printf("O Super Poder do Card 01(%f) é maior que o Super poder do Card 02(%f):? %d", superpoder1, superpoder2, (superpoder1>superpoder2));
 
 
 return 0;
