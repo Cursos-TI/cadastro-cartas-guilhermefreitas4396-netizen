@@ -110,13 +110,28 @@ printf("PIB PER CAPITA: %.2f\n", percapta2);
 
 // exibe a comparação das cartas
 printf("****COMPARAÇAO CARTA****\n");
-printf("A população do Card 01(%u) é maior que a população do Card 02(%u):? %d \n", populacao, populacao2, (populacao>populacao2));
-printf("A area do Card 01(%.2f) é maior que a area do Card 02(%.2f):? %d \n", area, area2, (area>area2));
-printf("O PIB do Card 01(%.2f) é maior que o PIB do Card 02(%.2f):? %d \n", pib, pib2, (pib>pib2));
-printf("A Quat pontos turisticos Card 01(%d) é maior que a Quant pontos turisiticos do Card 02(%d):? %d \n", quantpontoturistico, quantpontoturistico2, (quantpontoturistico>quantpontoturistico2));
-printf("A Densidade populacional Card 01(%.2f) é maior que a Densidade populacional do Card 02(%.2f):? %d \n", densidade1, densidade2, (densidade1>densidade2));
-printf("O PIB per capita do Card 01(%.2f) é menor que o PIB per capita do Card 02(%.2f):? %d \n", percapta1, percapta2, (percapta1<percapta2));
-printf("O Super Poder do Card 01(%.2f) é maior que o Super poder do Card 02(%.2f):? %d \n", superpoder1, superpoder2, (superpoder1>superpoder2));
+
+printf("---POPULAÇAO---\n");
+printf("Card 01 - %s população: %u \n", nomecidade, populacao);
+printf("Card 02 - %s população: %u \n", nomecidade2, populacao2);
+
+if (populacao>populacao2)
+{
+  printf("A cidade %s e vencedora", nomecidade);
+}else{
+  printf("A cidade %s e vencedora", nomecidade2);
+}
+
+printf("---AREA---\n");
+printf("Card 01 - %s area: %f \n", nomecidade, area);
+printf("Card 02 - %s area: %f \n", nomecidade2, area2);
+
+if (area>area2)
+{
+  printf("A cidade %s e vencedora", nomecidade);
+}else{
+  printf("A cidade %s e vencedora", nomecidade2);
+}
 
 
 return 0;
